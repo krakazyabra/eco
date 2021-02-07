@@ -1,0 +1,83 @@
+description = "Default layout"
+==
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HighLoad - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{{'assets/img/favicon.png'|theme}}">
+
+    <!-- CSS here -->
+    {% styles %}
+    <link href="{{ [
+    'assets/css/all.less'
+    ]|theme }}" rel="stylesheet">    
+
+    
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    {%partial "preload" %}
+
+    <!-- Preloader Start -->
+    <header>
+
+        {%partial "header" %}
+
+    </header>
+    <main>
+        {% page %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+      {% partial "footer" %}
+      
+  </footer>
+
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<script src="{{ [
+'assets/js/vendor/modernizr-3.5.0.min.js',
+'assets/js/vendor/jquery-1.12.4.min.js',
+'assets/js/popper.min.js',
+'assets/js/bootstrap.min.js',
+'assets/js/jquery.slicknav.min.js',
+'assets/js/owl.carousel.min.js',
+'assets/js/slick.min.js',
+'assets/js/wow.min.js',
+'assets/js/animated.headline.js',
+'assets/js/jquery.magnific-popup.js',
+'assets/js/gijgo.min.js',
+'assets/js/jquery.vide.js',
+'assets/js/jquery.nice-select.min.js',
+'assets/js/jquery.sticky.js',
+'assets/js/jquery.barfiller.js',
+'assets/js/jquery.counterup.min.js',
+'assets/js/waypoints.min.js',
+'assets/js/jquery.countdown.min.js',
+'assets/js/hover-direction-snake.min.js',
+'assets/js/contact.js',
+'assets/js/jquery.form.js',
+'assets/js/jquery.validate.min.js',
+'assets/js/mail-script.js',
+'assets/js/jquery.ajaxchimp.min.js',
+'assets/js/plugins.js',
+'assets/js/main.js',
+]|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>	

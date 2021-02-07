@@ -1,0 +1,16 @@
+<section class="team-area section-padding40 section-bg1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <div class="section-tittle text-center mb-105">
+                    <h2>На любом тарифе вам доступны</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for i in 1..6 %}
+            {% partial 'home/features/' ~ i  %} 
+            {% endfor %}
+        </div>
+    </div>
+</section>
