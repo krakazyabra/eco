@@ -7118,3 +7118,11 @@ del {
 .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li.active > a {
 	background: transparent;
 }
+
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
